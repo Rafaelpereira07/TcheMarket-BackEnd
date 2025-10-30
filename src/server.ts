@@ -4,6 +4,7 @@ import loginController from './controllers/loginController'
 import { authMiddleware } from './middlewares/authMiddleware'
 import userSearchController from './controllers/userSearchController'
 import meController from './controllers/meController'
+import validateTokenController from './controllers/validateTokenController'
 
 const databasePath = 'db.json'
 
@@ -18,6 +19,7 @@ server.post('/register', registerController)
 server.post('/login', loginController)
 server.get('/users/search', userSearchController)
 server.get('/me', meController)
+server.post("/token/validate", validateTokenController);
 
 server.use(authMiddleware)
 
