@@ -1,15 +1,16 @@
-import jwt from 'jsonwebtoken'
+import jwt from "jsonwebtoken";
 
 type JwtPayload = {
-	id: string
+  id: string;
+  username: string;
+};
+
+const SECRET_KEY = "123456absd";
+
+export function createToken(payload: JwtPayload) {
+  return jwt.sign(payload, SECRET_KEY, { expiresIn: "1h" });
 }
 
-const SECRET_KEY = '123456absd'
-
-export function createToken(payload: JwtPayload){
-	return jwt.sign(payload, SECRET_KEY, { expiresIn: '1h' })
-}
-
-export function verifyToken(token: string): JwtPayload{
-	return jwt.verify(token, SECRET_KEY) as JwtPayload
+export function verifyToken(token: string): JwtPayload {
+  return jwt.verify(token, SECRET_KEY) as JwtPayload;
 }
