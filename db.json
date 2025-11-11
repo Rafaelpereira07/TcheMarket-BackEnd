@@ -5,7 +5,22 @@
 			"name": "Rafael Pereira",
 			"email": "rafael@email.com",
 			"password": "$2b$08$UvFzT0BcWvuJtSep1oG/se/covJ/lZsbcehZKsIa06J6em/wFzmve",
-			"cart": [],
+			"cart": [
+				{
+					"id": 7,
+					"name": "Tonico capilar",
+					"price": 40,
+					"image": "https://m.media-amazon.com/images/I/512wbV2wxXL._AC_SX522_.jpg",
+					"quantity": 1
+				},
+				{
+					"id": 1,
+					"name": "Chukudu",
+					"price": 2000,
+					"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIY8qAuNXohTAfd8KpxpCKxfVRa5pZ3cJ-Q&s",
+					"quantity": 1
+				}
+			],
 			"ratings": []
 		},
 		{
@@ -30,6 +45,37 @@
 			"email": "matheus@email.com",
 			"password": "$2b$08$eZr4ffAbEEFqglySXcFclO50DBhRtTKHkFFisVv6fOYqZal3j1Ot.",
 			"cart": [],
+			"ratings": []
+		},
+		{
+			"id": "c48edf15-0ed8-4195-830b-5e2a3427f210",
+			"name": "dededio",
+			"email": "dedecio@email.com",
+			"password": "$2b$08$LU6blv7HQ4P1GUi0z0De9edtGzftKS9PPP6GzzMjriuQuato1sXfu",
+			"cart": [],
+			"ratings": []
+		},
+		{
+			"id": "578fc920-0023-48e0-b8dd-abf7e0f950a4",
+			"name": "samuca",
+			"email": "samuca@email.com",
+			"password": "$2b$08$ygNbb5mikf6MKIyuJu/xsuGRe8aY750Q6AUm3QCq.yH/E/B364cmO",
+			"cart": [
+				{
+					"id": 2,
+					"name": "Makita",
+					"price": 310,
+					"image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTb8rUkyO-qFA6jXINzI_muoRctPA1N59VN7CmzysjGLUpZjexzTDb2WosbFEx9KjtxBQ9jFTnloNO9tmueS8GTgnMyel15q4ywvlAwMgr0qdLD2aCdJq4SLKFgohnr-HeiV3nkOLk&usqp=CAc",
+					"quantity": 1
+				},
+				{
+					"id": 1,
+					"name": "Chukudu",
+					"price": 2000,
+					"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIY8qAuNXohTAfd8KpxpCKxfVRa5pZ3cJ-Q&s",
+					"quantity": 1
+				}
+			],
 			"ratings": []
 		}
 	],
@@ -93,6 +139,16 @@
 			"description": "Galocha usada, ainda dura bastante",
 			"location": "Pelotas, RS",
 			"createdAt": "2025-11-04T12:14:47.953Z"
+		},
+		{
+			"id": 7,
+			"userId": "c48edf15-0ed8-4195-830b-5e2a3427f210",
+			"name": "Tonico capilar",
+			"price": 40,
+			"image": "https://m.media-amazon.com/images/I/512wbV2wxXL._AC_SX522_.jpg",
+			"description": "Melhor tonico da cidade",
+			"location": "Pelotas, RS",
+			"createdAt": "2025-11-04T12:55:58.609Z"
 		}
 	],
 	"comments": [
@@ -127,6 +183,14 @@
 			"userName": "Victor",
 			"comment": "estragou o chimarrão",
 			"createdAt": "2025-10-31T23:27:04.994Z"
+		},
+		{
+			"id": 5,
+			"productId": 4,
+			"userId": "c48edf15-0ed8-4195-830b-5e2a3427f210",
+			"userName": "dededio",
+			"comment": "carro maneiro",
+			"createdAt": "2025-11-04T12:55:14.988Z"
 		}
 	],
 	"ratings": [
@@ -174,6 +238,24 @@
 			"raterName": "Rafael Pereira",
 			"rating": 1,
 			"text": "horrivel"
+		},
+		{
+			"id": 6,
+			"productId": 4,
+			"sellerId": "a9a5037c-3f31-49f7-9a45-bf3f50caed47",
+			"raterId": "c48edf15-0ed8-4195-830b-5e2a3427f210",
+			"raterName": "dededio",
+			"rating": 5,
+			"text": "nao tem roda"
+		},
+		{
+			"id": 7,
+			"productId": 2,
+			"sellerId": "1f5b2ab9-5fdf-4623-81b1-f7a0ceab9048",
+			"raterId": "578fc920-0023-48e0-b8dd-abf7e0f950a4",
+			"raterName": "samuca",
+			"rating": 4,
+			"text": "muito boa, mas os cara ta no teto querendo pega"
 		}
 	]
 }
